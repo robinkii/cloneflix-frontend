@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.cloneflix-logo{
+    position: relative;
+    letter-spacing: 2px;
+    transform: skewX(-10deg);
+}
+
+.cloneflix-logo::before,
+.cloneflix-logo::after {
+    content: 'Cloneflix';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: skewX(-10deg);
+}
+
